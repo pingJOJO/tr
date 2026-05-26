@@ -1,0 +1,6 @@
+<routes>
+    <flow id="night_1" begin="0" end="1000" probability="0.01" from="-E19" to="E21"/>
+    <flow id="night_2" begin="0" end="1000" probability="0.01" from="-E20" to="E22"/>
+    <flow id="night_3" begin="0" end="1000" probability="0.01" from="-E21" to="E19"/>
+    <flow id="night_4" begin="0" end="1000" probability="0.01" from="-E22" to="E20"/>
+</routes>

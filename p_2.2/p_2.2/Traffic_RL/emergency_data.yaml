@@ -1,0 +1,9 @@
+path: c:/Users/GTX/Downloads/Traffic_RL/emergency_dataset
+train: train/images
+val: valid/images
+
+# number of classes
+nc: 2
+
+# class names
+names: ['ignore', 'ambulance']

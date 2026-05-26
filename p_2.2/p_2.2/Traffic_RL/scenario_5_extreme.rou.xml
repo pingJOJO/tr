@@ -1,0 +1,13 @@
+<routes>
+    <vType id="ambulance" vClass="emergency" guiShape="emergency" color="red" maxSpeed="40" speedFactor="1.5"/>
+
+    <flow id="f_19" begin="0" end="1000" probability="0.02" from="-E19" to="E21"/>
+    <flow id="f_20" begin="0" end="1000" probability="0.02" from="-E20" to="E22"/>
+    <flow id="f_21" begin="0" end="1000" probability="0.02" from="-E21" to="E19"/>
+
+    <flow id="heavy_jam" begin="0" end="500" probability="0.8" from="-E22" to="E20"/>
+
+    <vehicle id="emg_stuck" type="ambulance" depart="80">
+        <route edges="-E22 E20"/>
+    </vehicle>
+</routes>

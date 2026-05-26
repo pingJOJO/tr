@@ -1,0 +1,27 @@
+<routes>
+    <vType id="ambulance" vClass="emergency" guiShape="emergency" color="red" maxSpeed="40" speedFactor="1.5"/>
+
+    <flow id="f_19_20" begin="0" end="1000" probability="0.02" from="-E19" to="E20"/>
+    <flow id="f_19_21" begin="0" end="1000" probability="0.02" from="-E19" to="E21"/>
+    <flow id="f_19_22" begin="0" end="1000" probability="0.02" from="-E19" to="E22"/>
+
+    <flow id="f_20_19" begin="0" end="1000" probability="0.02" from="-E20" to="E19"/>
+    <flow id="f_20_21" begin="0" end="1000" probability="0.02" from="-E20" to="E21"/>
+    <flow id="f_20_22" begin="0" end="1000" probability="0.02" from="-E20" to="E22"/>
+
+    <flow id="f_21_19" begin="0" end="1000" probability="0.02" from="-E21" to="E19"/>
+    <flow id="f_21_20" begin="0" end="1000" probability="0.02" from="-E21" to="E20"/>
+    <flow id="f_21_22" begin="0" end="1000" probability="0.02" from="-E21" to="E22"/>
+
+    <flow id="f_22_19" begin="0" end="1000" probability="0.02" from="-E22" to="E19"/>
+    <flow id="f_22_20" begin="0" end="1000" probability="0.02" from="-E22" to="E20"/>
+    <flow id="f_22_21" begin="0" end="1000" probability="0.02" from="-E22" to="E21"/>
+
+    <vehicle id="emg_vehicle_1" type="ambulance" depart="200">
+        <route edges="-E22 E20"/>
+    </vehicle>
+    
+    <vehicle id="emg_vehicle_2" type="ambulance" depart="600">
+        <route edges="-E19 E21"/>
+    </vehicle>
+</routes>

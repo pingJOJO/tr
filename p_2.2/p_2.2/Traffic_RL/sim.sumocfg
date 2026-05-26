@@ -1,0 +1,6 @@
+<configuration>
+    <input>
+        <net-file value="mm3.net.xml"/>
+        <route-files value="master_scenario.rou.xml"/>
+    </input>
+</configuration>

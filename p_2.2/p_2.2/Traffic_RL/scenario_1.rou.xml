@@ -1,0 +1,7 @@
+<routes>
+    <flow id="heavy_1" begin="0" end="1000" number="1000" from="-E19" to="E21"/>
+    <flow id="heavy_2" begin="0" end="1000" number="1000" from="-E21" to="E19"/>
+    
+    <flow id="light_1" begin="0" end="1000" number="10" from="-E20" to="E22"/>
+    <flow id="light_2" begin="0" end="1000" number="10" from="-E22" to="E20"/>
+</routes>

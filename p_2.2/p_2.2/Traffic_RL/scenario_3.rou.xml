@@ -1,0 +1,8 @@
+<routes>
+    <flow id="normal_1" begin="0" end="1000" probability="0.05" from="-E19" to="E21"/>
+    <flow id="normal_2" begin="0" end="1000" probability="0.05" from="-E20" to="E22"/>
+    <flow id="normal_3" begin="0" end="1000" probability="0.05" from="-E21" to="E19"/>
+    <flow id="normal_4" begin="0" end="1000" probability="0.05" from="-E22" to="E20"/>
+
+    <flow id="shockwave" begin="300" end="350" number="50" from="-E22" to="E20"/>
+</routes>
